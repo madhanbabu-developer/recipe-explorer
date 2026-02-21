@@ -9,7 +9,9 @@ const recipeSchema = new mongoose.Schema({
   total_time: Number,
   description: String,
 
-  url: String,  
+  url: String,
+  ingredients: [String],
+  instructions: [String],
 
   nutrients: {
     calories: Number,

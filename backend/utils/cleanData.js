@@ -16,6 +16,8 @@ const cleanRecipe = (r) => {
 
     // ✅ ADD THIS LINE
     url: r.URL || null,
+    ingredients: r.ingredients || [],
+    instructions: r.instructions || [],
 
     nutrients: {
       calories: parseNumber(r.nutrients?.calories),
